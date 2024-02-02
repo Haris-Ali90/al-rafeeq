@@ -1,0 +1,24 @@
+// @import '../variables';
+
+.page-announcements{
+	.announcements_list{
+		.announcement_box{background: $white; margin: 20px 0; padding: 20px; border: solid 1px $bc1-lighter;
+			@include box-shadow(0, 1px, 6px, rgba($bc1-lighter, 0.6));
+			@include border-radius($base-border-radius);
+			@include transition($duration-1);
+			.date{ background: $bc1-lightest; padding: 6px 20px; width: 160px; margin-bottom: 6px; 
+				@include border-radius(100px);
+			}
+			.cnt{
+				.title{}
+			}
+
+			&:hover{
+				@include transform(scale(1.01));
+				@include box-shadow(0, 4px, 12px, rgba($bc1-lighter, 0.8));
+			}
+		}
+	}
+	@include for-mobile-large-screen{
+	}
+}

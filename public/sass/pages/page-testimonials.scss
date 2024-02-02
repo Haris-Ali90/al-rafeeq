@@ -1,0 +1,26 @@
+// @import '../variables';
+
+.page-testimonials{
+	.testimonials_list{
+		.testimonial_box{background: $white; margin: 20px 0; padding: 20px; border: solid 1px $bc1-lighter;
+			@include box-shadow(0, 1px, 6px, rgba($bc1-lighter, 0.6));
+			@include border-radius($base-border-radius);
+			@include transition($duration-1);
+			
+			.propfile_img_wrap{@include flexWidth(130px);}
+			.propfile_img{
+				@include size(100px);
+			}
+			.info{padding-left: 15px;
+				.title{}
+			}
+
+			&:hover{
+				@include transform(scale(1.01));
+				@include box-shadow(0, 4px, 12px, rgba($bc1-lighter, 0.8));
+			}
+		}
+	}
+	@include for-mobile-large-screen{
+	}
+}

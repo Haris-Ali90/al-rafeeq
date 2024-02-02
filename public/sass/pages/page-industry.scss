@@ -1,0 +1,17 @@
+// @import '../variables';
+
+.page-industry{
+	.industry_row{
+		.industry_bg{height: 366px; background-size: cover; background-position: center;}
+		.industry_box{max-width: 500px; margin: 0 auto; padding: 12px 0;
+			.icon{margin: 0 auto; display: table;}
+		}
+	}
+
+	@include for-mobile-large-screen{
+		.industry_row{
+			.industry_bg{height: 150px; }
+			.industry_box{padding: 20px 0;}
+		}
+	}
+}

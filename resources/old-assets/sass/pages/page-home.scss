@@ -1,0 +1,169 @@
+@import '../variables';
+
+.page-home{
+	.main_banner{
+		.main_page_img{}
+	}
+
+	.why_section{
+		.why_box{ background: $white; padding: 30px 30px 50px; 
+			@include box-shadow(0, 1px, 4px, $bc1-lighter);
+		}
+	}
+
+	.section_joey_requirement{background: url(../../assets/images/joey_features_section.png) no-repeat center center; background-size: auto 100%;}
+	
+	
+    .joy_business_options{
+		.container.options_container{ background: $white; padding: 0; margin-top: -120px; 
+			@include border-radius($base-border-radius); overflow: hidden;
+			@include box-shadow(0, 1px, 5px, rgba($bc1-light, 0.3));
+		}
+        .row{
+            >div:nth-child(odd){border-right: solid 1px $bc1-lightest;}
+        }
+        .option_box{ padding: 28px; 
+            &.joey_option{ background: darken($bc1-lightester, 2%);}
+            &.business_option{ }
+			.icon{display: table; margin: 0 auto 20px;}
+			.action{margin-top: 22px;}
+        }
+	}
+
+	.section_tech_review{
+		.action{@include flexWidth(170px);}
+	}
+
+	.partners_section{
+		.partners_list{
+			.partner_box{padding: 10px 12px;
+				img{max-height: 40px; max-width: 120px;
+					@include filter(grayscale(100%));
+					@include opacity(0.6);
+					@include transition($duration-1);
+					&:hover{
+						@include filter(grayscale(0));
+						@include opacity(1);
+					}
+				}
+			}
+		}
+	}
+
+	.section_overview{position: relative; border-bottom: solid 1px $bc1-lighter; 
+		&:after{content:""; display: block; background: url(../images/laptop-screenshot.png) no-repeat center left; background-size: auto 465px;
+			@include position(absolute, 0 0 null null);
+			@include size(704px, 100%); max-width: 100%;
+		}
+	}
+
+	.section_techreview{overflow: visible;
+		.tech_review_box{margin-top: -40px; position: relative; z-index: 2; background: $white; @include border-radius($base-border-radius); padding: 15px 30px 15px 30px;
+			@include box-shadow(0, 2px, 12px, $bc1-lighter);
+			.icon{}
+			.cnt{padding: 0 20px;
+				p{margin:0;}
+			}
+			.action{@include flexWidth(170px);}
+		}
+	}
+
+	.section_becomejoey{
+		.joeycustomer_bg{background: url(../images/joey_customer.jpg) no-repeat; background-size: cover; min-height: 440px}
+		.become_joey_cnt{max-width: 350px; margin: 0 auto;}
+	}
+
+	.section_business{
+		.cnt{max-width: 700px; margin: 0 auto;}
+		.action{margin-top: 40px;
+			.btn{width: 305px; max-width: 100%;
+				@include box-shadow(0, 5px, 25px, rgba(darken($basecolor2, 10%), 0.5));
+			}
+		}
+	}
+
+	.section_publisher{
+		.publisher_list{
+			.publisher_box{margin:0 16px;
+				img{max-height: 42px;}
+			}
+		}
+	}
+	
+	.section_confused{
+		.row{
+			@include not-for-mobile{
+				[class*="col-"]:nth-child(odd){border-right: solid 1px $bc1-lighter;}
+			}
+		}
+		.confused_col{
+			padding: 60px 58px;
+		}
+	}
+
+	@include for-mobile-large-screen {
+		.why_section{
+			.why_box{padding: 20px; margin: 6px 0;}
+		}
+		.section_joey_requirement{background: none;}
+		
+		.section_process .process_box{ border-bottom: solid 1px $bc1-lighter; padding-bottom: 12px; margin-bottom: 12px;
+			.icon_wrap{margin-bottom: 8px;}
+		}
+		
+		.testimonials_section {
+			.testimonials_list_wrap .testimonials_list .testimonials_box{padding: 30px 20px 20px;
+				.img{@include flexWidth(80px);
+					img{@include size(80px);}
+				}
+				.cnt{padding-left: 12px;}
+			}
+		}
+
+		.section_confused{
+			[class*="col-"]:nth-child(odd){border-bottom: solid 1px $bc1-lighter;}
+			.confused_col{ padding: 40px 15px;}
+		}
+	}
+
+	.section_publisher{position: relative;
+		.arrowDown{background: $bc1-lightester; color: $basecolor1; z-index: 10; line-height: 65px; font-size: $bfsize+10; margin-left: -32px; text-align: center;
+			@include size(65px);
+			@include position(absolute, -32px null null 50%);
+			@include border-radius(100%);
+			@include box-shadow(0, 1px, 3px, $bc1-lighter);
+		}
+	}
+
+	@include for-mobile-large-screen{
+		#main_banner{border-bottom: solid 1px $bc1-lighter; background: url(../images/map_vector_bottom.png) no-repeat bottom center; background-size: 130% auto !important;
+			.container{padding-bottom: 30px;}
+			.hgroup{margin: 0;}
+			.actions{margin: 42px 0 40px;}
+		}
+		.joy_business_options{@include padding(null 15px);
+			.container.options_container{margin: -80px 0 0;
+				@include box-shadow(0, 1px, 5px, $bc1-light);
+			}
+		}
+		.section_overview{
+			&:after{position: unset; right: unset; top: unset; height: 100px; background-size: auto 100%; background-position: center center;}
+		}
+
+		.section_techreview .tech_review_box{padding: 20px;
+			.icon{
+				span{margin: 0 auto;}
+			}
+			.cnt{padding: 12px 0;}
+		}
+
+		.section_becomejoey{
+			.joeycustomer_bg{min-height: 250px; background-position: top center; background-size: cover;}
+			.become_joey_cnt{padding: 30px 0;}
+		}
+
+		.section_publisher .publisher_list .publisher_box{margin: 10px 8px;
+			@include flexWidth(130px);
+		}
+	}
+}

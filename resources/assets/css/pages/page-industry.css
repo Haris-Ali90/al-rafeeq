@@ -1,0 +1,72 @@
+/*
+Error: Undefined mixin 'for-mobile-large-screen'.
+        on line 11 of /Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss, in `for-mobile-large-screen'
+        from line 11 of /Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss
+
+6: 		.industry_box{max-width: 500px; margin: 0 auto; padding: 12px 0;
+7: 			.icon{margin: 0 auto; display: table;}
+8: 		}
+9: 	}
+10: 
+11: 	@include for-mobile-large-screen{
+12: 		.industry_row{
+13: 			.industry_bg{height: 150px; }
+14: 			.industry_box{padding: 20px 0;}
+15: 		}
+16: 	}
+
+Backtrace:
+/Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss:11:in `for-mobile-large-screen'
+/Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss:11
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `visit_mixin'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+org/jruby/RubyArray.java:2412:in `map'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `visit_rule'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Java/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:293:in `watch'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+file:/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Java/compass-app.jar!/app_watcher.rb:12:in `watch!'
+file:/private/var/folders/sg/d9r35jk17f53mgq2m8ztm3qw0000gn/T/AppTranslocation/66BE3F92-FEE0-431D-A458-5C2D05CA0857/d/compass.app/Contents/Java/compass-app.jar!/ui/tray.rb:447:in `watch'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'for-mobile-large-screen'.\A         on line 11 of /Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss, in `for-mobile-large-screen'\A         from line 11 of /Applications/MAMP/htdocs/joeyco.com/resources/assets/sass/pages/page-industry.scss\A \A 6: 		.industry_box{max-width: 500px; margin: 0 auto; padding: 12px 0;\A 7: 			.icon{margin: 0 auto; display: table;}\A 8: 		}\A 9: 	}\A 10: \A 11: 	@include for-mobile-large-screen{\A 12: 		.industry_row{\A 13: 			.industry_bg{height: 150px; }\A 14: 			.industry_box{padding: 20px 0;}\A 15: 		}\A 16: 	}"; }

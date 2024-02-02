@@ -1,0 +1,97 @@
+// @import '../variables';
+
+.page-track-order{
+	.content-area{ }
+	
+	.order_status_percentage{margin-top: 35px;
+		.percentage{display: block; font-size: $h2; margin: 6px 0}
+	}
+	
+	.status_bar{background: $bc2-lightest; padding: 5px; margin: 12px 0 40px;
+		@include border-radius(100px);
+		@include box-shadow(0, 0, 2px, rgba($bc1-dark, 0.2));
+		.current_status{@extend %gradient-2; height: 25px;
+			@include border-radius(100px);
+		}
+	}
+
+	.expected_arrival{
+		.icon{content:""; display: block; background: url(../images/box_package.svg) no-repeat;
+			@include size(90px/2, 98px/2);
+		}
+		.info{padding-left: 20px;
+			.date_time{font-size: $bfsize+4; color: $bf-color; margin-top: 4px;}
+			.time{border-left: solid 1px $bc1-lighter; margin-left: 12px; padding-left: 12px;}
+		}
+	}
+
+	.trackorder_steps{
+		.time{border-left: solid 1px $bc1-lighter; margin-left: 8px; padding-left: 8px;}
+		.step_info{min-height: 42px;}
+		li{
+			.status:before{background: $bc1-lighter;}
+			&.row_active .status{
+				.icofont-rounded-right{
+					@include display(flex);
+					@include align-items(center);
+					@include justify-content(center);
+					&:before{content:""; display: block; background: $basecolor1;
+						border: solid 3px $white;
+						@include size(20px);
+						@include border-radius(100%);
+						@include box-shadow(0, 1px, 3px, rgba($bc1-light, 0.4));
+					}
+				}
+			}
+		}
+	}
+	
+	.section_track_order_info{
+		.info_box{
+			.icon{
+				[class*="icofont-"]{font-size: $bfsize+24; color: $basecolor1;}
+			}
+			.info{padding-left: 10px; width: 100%;
+				p{font-size: $bfsize-sm;}
+			}
+			.joey_box{ background: $white; padding: 8px; 
+				@include border-radius($base-border-radius);
+				@include box-shadow(0, 1px, 4px, $bc1-lighter);
+				.joey_info{padding-left: 12px;}
+			}
+		}
+	}
+
+	.location_map_section{position: relative;
+		.hide_map_btn{width: 140px; margin-left: -70px; z-index: 10;
+			@include position(absolute, null 50% 100% null);
+			@include transform(translate(70px, 0));
+		}
+		.location_map{
+			height: 350px;
+		}
+	}
+	// Responsive
+	@include for-mobile-large-screen{
+		
+		.order_status_percentage{margin-top: 15px;}
+		.status_bar{margin-bottom: 15px;}
+		
+		.trackorder_steps{margin-top: 30px;}
+
+		.section_track_order_info{
+			.row{
+				[class*="col-"]:not(:last-child){ border-bottom: solid 1px $bc1-lighter; padding-bottom: 20px; margin-bottom: 20px; }
+			}
+			.info_box{
+				.info{}
+			}
+		}
+	}
+
+	.proof_img{margin-top: 10px;
+		img{max-height: 300px; border: solid 2px $white;
+			@include border-radius($base-border-radius);
+		}
+	}
+}

@@ -1,0 +1,47 @@
+// @import '../variables';
+
+.page-serviceDetail{
+	.section_problem_overview{
+		.box{
+			&:not(:last-child){margin-bottom: 26px;}
+		}
+	}
+
+	.section_book_deliver{
+		.screenshot{
+			img{max-width: 370px;}
+		}
+	}
+
+	.book_delivery_process{
+		li{background: $white; padding: 14px; margin-bottom: 20px !important; position: relative;
+			@include border-radius($base-border-radius); 
+			@include box-shadow(0, 1px, 6px, $bc1-lighter);
+			.index{font-weight: $bold; background: $bc1-lighter; text-align: center; line-height: 35px;
+				@include size(35px);
+				@include flexWidth(35px);
+				@include border-radius(100%);
+			}
+			.info_wrap{ padding-left: 12px;
+				.info{font-size: $bfsize-sm; color: $bc1-light;}
+			}
+
+			&.active{border: solid 2px $basecolor1;
+				&:before{content:"\ea68"; font-family:$iconfont; margin-top: -12px; display:block; color: $basecolor1; font-size: $bfsize*2;
+					@include position(absolute, 50% null null -22px);
+				}
+				.index{color: $basecolor1;}
+				.info_wrap{ 
+					.title{color: $basecolor1;}
+				}
+			}
+		}
+	}
+
+	@include for-mobile-large-screen{
+		.section_book_deliver .screenshot img{max-width: 100%;}
+		.book_delivery_process{
+			li.active:before{display: none;}
+		}
+	}
+}
